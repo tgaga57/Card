@@ -9,7 +9,7 @@
 import UIKit
 
 class LikedListTableViewController: UITableViewController {
-
+    
     // いいね」された名前の一覧
     var likedName: [String] = []
     // いいねされた人の職業
@@ -21,9 +21,9 @@ class LikedListTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
     }
-
+    
     // MARK: - Table view data source
-
+    
     // 必須:セルの数を返すメソッド
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // いいねされたユーザーの数
@@ -37,13 +37,10 @@ class LikedListTableViewController: UITableViewController {
     // 必須:セルの設定
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-//          cell.stackView.arrangedSubviews[0] = likedName[indexPath.row]
-        
-    
-        
+        //          cell.stackView.arrangedSubviews[0] = likedName[indexPath.row]
         
         // いいねされた名前を表示
-//        cell.textLabel?.text = likedName[indexPath.row]
+        //        cell.textLabel?.text = likedName[indexPath.row]
         cell.imageView2.image = UIImage(named: likedName[indexPath.row])
         
         // スタックヴューの中身を取得
@@ -58,5 +55,5 @@ class LikedListTableViewController: UITableViewController {
         
         return cell
     }
-
+    
 }
