@@ -152,9 +152,14 @@ class ViewController: UIViewController {
                 selectedCardCount += 1
 
                 if selectedCardCount >= personList.count {
+                    // 最後の画面がいいね梨を表示するための条件分岐
+                    if likedName.isEmpty {
+                        performSegue(withIdentifier: "noLikedImage", sender: nil)
+                    } else {
                     // 遷移処理
                     performSegue(withIdentifier: "ToLikedList", sender: self)
-                }
+                    }
+            }
 
             } else if card.center.x > self.view.frame.width - 50 {
                 // 右に大きくスワイプしたときの処理
@@ -176,10 +181,9 @@ class ViewController: UIViewController {
                 selectedCardCount += 1
                 
                 if selectedCardCount >= personList.count {
-                    // 遷移処理
                     performSegue(withIdentifier: "ToLikedList", sender: self)
+                    
                 }
-
             } else {
                 // アニメーションをつける
                 UIView.animate(withDuration: 0.5, animations: {
@@ -207,10 +211,16 @@ class ViewController: UIViewController {
         })
 
         selectedCardCount += 1
-        // 画面遷移
+        
         if selectedCardCount >= personList.count {
-            performSegue(withIdentifier: "ToLikedList", sender: self)
+            // 遷移処理
+            if likedName.isEmpty {
+                performSegue(withIdentifier: "noLikedImage", sender: nil)
+            } else {
+                performSegue(withIdentifier: "ToLikedList", sender: self)
+            }
         }
+
     }
 
     // いいねボタン
