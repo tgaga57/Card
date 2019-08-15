@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B108AE632305423B0018235D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B108AE612305423B0018235D /* TableViewCell.swift */; };
+		B108AE642305423B0018235D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B108AE622305423B0018235D /* TableViewCell.xib */; };
 		DD8AFB7722FE43A6005AFD25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AFB7622FE43A6005AFD25 /* AppDelegate.swift */; };
 		DD8AFB7922FE43A6005AFD25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8AFB7822FE43A6005AFD25 /* ViewController.swift */; };
 		DD8AFB7C22FE43A6005AFD25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8AFB7A22FE43A6005AFD25 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B108AE612305423B0018235D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B108AE622305423B0018235D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		DD8AFB7322FE43A6005AFD25 /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8AFB7622FE43A6005AFD25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8AFB7822FE43A6005AFD25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				DD8AFB7622FE43A6005AFD25 /* AppDelegate.swift */,
 				DD8AFB7822FE43A6005AFD25 /* ViewController.swift */,
 				DD8AFB7A22FE43A6005AFD25 /* Main.storyboard */,
+				B108AE612305423B0018235D /* TableViewCell.swift */,
+				B108AE622305423B0018235D /* TableViewCell.xib */,
 				DD8AFB8822FE9262005AFD25 /* LikedListTableViewController.swift */,
 				DD8AFB7D22FE43A7005AFD25 /* Assets.xcassets */,
 				DD8AFB7F22FE43A7005AFD25 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8AFB8122FE43A7005AFD25 /* LaunchScreen.storyboard in Resources */,
+				B108AE642305423B0018235D /* TableViewCell.xib in Resources */,
 				DD8AFB7E22FE43A7005AFD25 /* Assets.xcassets in Resources */,
 				DD8AFB7C22FE43A6005AFD25 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8AFB8922FE9262005AFD25 /* LikedListTableViewController.swift in Sources */,
+				B108AE632305423B0018235D /* TableViewCell.swift in Sources */,
 				DD8AFB7922FE43A6005AFD25 /* ViewController.swift in Sources */,
 				DD8AFB7722FE43A6005AFD25 /* AppDelegate.swift in Sources */,
 			);
