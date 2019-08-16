@@ -328,7 +328,7 @@
             </objects>
             <point key="canvasLocation" x="786.95652173913049" y="37.5"/>
         </scene>
-        <!--Liked List Table View Controller-->
+        <!--いいねリスト-->
         <scene sceneID="QKr-Fj-0XI">
             <objects>
                 <tableViewController id="HJZ-Rr-xTd" customClass="LikedListTableViewController" customModule="Card" customModuleProvider="target" sceneMemberID="viewController">
@@ -351,12 +351,13 @@
                             <outlet property="delegate" destination="HJZ-Rr-xTd" id="lq4-tU-cgG"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="いいねリスト" id="tFh-Mv-0Hj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMe-KE-aho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2012" y="-710"/>
         </scene>
-        <!--View Controller-->
+        <!--いいねリスト-->
         <scene sceneID="88V-WX-67T">
             <objects>
                 <viewController id="FA6-QZ-DR4" sceneMemberID="viewController">
@@ -365,10 +366,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="板垣" translatesAutoresizingMaskIntoConstraints="NO" id="wGp-il-2S0">
-                                <rect key="frame" x="179.66666666666666" y="108" width="16" height="16"/>
+                                <rect key="frame" x="89" y="108" width="197.00000000000006" height="256"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いいねした人はいません" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fja-jQ-vH2">
-                                <rect key="frame" x="42.666666666666657" y="144" width="290" height="32"/>
+                                <rect key="frame" x="42.666666666666657" y="384" width="290" height="32"/>
                                 <color key="backgroundColor" red="0.54242893557323868" green="0.82355331327269143" blue="0.89813512563705444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -384,6 +385,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6YF-LT-Enf"/>
                     </view>
+                    <navigationItem key="navigationItem" title="いいねリスト" id="VU4-pk-zwS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMj-Hw-T72" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
